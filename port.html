@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Filter Gallery</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<style>
+  .section {
+  padding: 30px 0;
+  color: #333;
+}
+.section .top-side {
+  text-align: center;
+}
+.section .top-side .title {
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+}
+.section .top-side .title:after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid #494949;
+  margin: 8px auto;
+}
+.section .top-side h2 {
+  font-weight: 700;
+}
+.section.portfolio .filters {
+  text-align: center;
+  margin-top: 50px;
+}
+.section.portfolio .filters ul {
+  padding: 0;
+}
+.section.portfolio .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+}
+.section.portfolio .filters ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  transition: width 350ms ease-out;
+}
+.section.portfolio .filters ul li:hover:after {
+  width: calc(100% - 60px);
+  transition: width 350ms ease-out;
+}
+.section.portfolio .filters ul li.active:after {
+  width: calc(100% - 60px);
+}
+.section.portfolio .filters-content {
+  margin-top: 50px;
+}
+.section.portfolio .filters-content .show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 350ms;
+}
+.section.portfolio .filters-content .hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms;
+}
+.section.portfolio .filters-content .item {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.section.portfolio .filters-content .item .p-inner {
+  padding: 20px 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.section.portfolio .filters-content .item .p-inner h5 {
+  font-size: 15px;
+}
+.section.portfolio .filters-content .item .p-inner .cat {
+  font-size: 13px;
+}
+.section.portfolio .filters-content .item img {
+  width: 100%;
+  height: 200px;
+}
+
+</style>
+
+  
+</head>
+
+<body>
+
+  <section class="portfolio section">
+  <div class="container">
+    <div class="top-side">
+    </div>
+    
+    <div class="filters">
+      <ul>
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".2559">2559</li>
+        <li data-filter=".2560">2560</li>
+        <li data-filter=".2561">2561</li>
+      </ul>
+    </div>
+    
+    <div class="filters-content">
+      <div class="row grid">
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-1/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-1.PNG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>การใช้ Illustrator ในการออกแบบ</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-2/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-2.png" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>โครงการคอมพิวเตอร์เพื่อน้อง รุ่นที่ 39</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-3/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-3.png" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ประยุกต์ Google Site ทำเว็บฝึกงาน</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-4/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-4.jpg" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ประยุกต์ Joomla + Helix Framework ทำเว็บฝึกงาน</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-5/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-5.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ประมวลผลงาน-มุสลิมะห์ โตะหลง-พัฒนาเว็บไซต์สำหรับรวบรวมผลงานกราฟฟิก</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-6/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-6.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ประมวลผลงาน-ซอฟียะห์ สาแล๊ะ-พัฒนาเว็บไซต์ต้นแบบฝึกอบรมใหม่</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-7/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-7.png" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ประมวลผลงาน-พีรพล ชิตตะวงศ์-Google Classroom with YouTube Hangouts on Air</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-8/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-8.png" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ประมวลผลงาน-อภิปรัชญ์ แก้วละเอียด-Google Site เว็บกลุ่มงาน</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2559">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2559-9/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2559-9.png" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>สื่อแนะนำการแก้ปัญหา blue screen เบื้องต้น</h5>
+              <div class="cat">2559</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2560">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2560-1/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2560-1.jpg" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>Graphic Design with PhotoShop</h5>
+              <div class="cat">2560</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2560">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2560-2/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2560-2.PNG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>Document Tracking System</h5>
+              <div class="cat">2560</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2560">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2560-3/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2560-3.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>วีดีโอสอนการใช้ Word เบื้องต้น</h5>
+              <div class="cat">2560</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2561">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2561-1/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2561-1.jpg" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ร้านค้าออนไลน์ Lnw Shop</h5>
+              <div class="cat">2561</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2561">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2561-2/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2561-2.png" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>Animated sticker line</h5>
+              <div class="cat">2561</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2561">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2561-3/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2561-3.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>PR Design by Photoshop & Illustrator</h5>
+              <div class="cat">2561</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2561">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2561-4/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2561-4.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>วิดีโอสอนการใช้โปรแกรม Excel ในการรวมไฟล์ ( Basic VBA )</h5>
+              <div class="cat">2561</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2561">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2561-5/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2561-5.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>ศึกษาและทดลองสร้างเว็บด้วย New Google Site + ทดลองทำเป็นเว็บสองภาษา</h5>
+              <div class="cat">2561</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 all 2561">
+          <div class="item">
+            <a href="https://sites.google.com/psu.ac.th/2561-6/"><img src="https://raw.githubusercontent.com/tammatashkt64/picport/master/2561-6.JPG" alt="Work 1"></a>
+            <div class="p-inner">
+              <h5>การประยุกต์ใช้Joomlaทำเว็บไซต์2ภาษา</h5>
+              <div class="cat">2561</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js'></script>
+<script>
+  $('.filters ul li').click(function(){
+  $('.filters ul li').removeClass('active');
+  $(this).addClass('active');
+  
+  var data = $(this).attr('data-filter');
+  $grid.isotope({
+    filter: data
+  })
+});
+
+var $grid = $(".grid").isotope({
+  itemSelector: ".all",
+  percentPosition: true,
+  masonry: {
+    columnWidth: ".all"
+  }
+})
+</script>
+</body>
+
+</html>
